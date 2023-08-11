@@ -1,6 +1,9 @@
 import tw from 'tailwind-styled-components'
-import { Button } from '@/app/components/ui/button'
 import { AccountsTable } from './AccountsTable'
+import {
+  AddAccountFormTrigger,
+  AddAccountFormTriggerButton,
+} from './AddAccountForm'
 
 const Header = tw.header`flex justify-between items-center border-b p-8 pl-10 pr-10`
 const Heading = tw.div`flex flex-col gap-2`
@@ -15,7 +18,9 @@ export function AccountsPane() {
           <HeadingTitle>Accounts</HeadingTitle>
           <HeadingSubtitle>View and manage your account</HeadingSubtitle>
         </Heading>
-        <Button className="font-normal">Add Account</Button>
+        <AddAccountFormTrigger>
+          <AddAccountFormTriggerButton />
+        </AddAccountFormTrigger>
       </Header>
       <AccountsTable />
     </>
