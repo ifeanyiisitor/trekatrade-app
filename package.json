@@ -35,6 +35,7 @@
     "wait": "^0.4.2"
   },
   "devDependencies": {
-    "prettier": "^3.0.1"
+    "prettier": "^3.0.1",
+    "tailwind-styled-components": "^2.2.0"
   }
 }
