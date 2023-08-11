@@ -1,2 +1,2 @@
-export * from '../../routes/admin.(page).(loading)';
-export { default } from '../../routes/admin.(page).(loading)';
+export * from '../../routes/admin.(loading)';
+export { default } from '../../routes/admin.(loading)';
