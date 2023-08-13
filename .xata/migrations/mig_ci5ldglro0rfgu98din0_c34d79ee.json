@@ -1,0 +1,16 @@
+{
+  "id": "mig_ci5ldglro0rfgu98din0",
+  "parentID": "mig_ci5lchojgcenc2v0jq50",
+  "checksum": "1:c34d79ee984f4919cae954e72acbecad782df698008721eae76a31e9b8e95e1c",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "avgUnitPrice",
+          "type": "float"
+        },
+        "table": "Investment"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "mig_ci7g5l5ro0rfgu98iq9g",
+  "parentID": "mig_ci7g595ro0rfgu98iq6g",
+  "checksum": "1:b16a6026137a86114fde09a9fd4d68c58a2a8ebaf9c7d4ed49d4bb0f498895aa",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "unitSellPrice",
+          "type": "float",
+          "notNull": true,
+          "defaultValue": "0"
+        },
+        "table": "SellOrder"
+      }
+    }
+  ]
+}

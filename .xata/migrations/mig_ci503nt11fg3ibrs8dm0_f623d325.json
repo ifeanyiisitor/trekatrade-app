@@ -1,0 +1,17 @@
+{
+  "id": "mig_ci503nt11fg3ibrs8dm0",
+  "parentID": "mig_ci4aej07j08g2rr6sns0",
+  "checksum": "1:f623d325cb5db6b9c8851b6386586c96348a6ccb414addc2617d253bfb1e8c9e",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "profitInTheGreen",
+          "type": "float",
+          "defaultValue": "0"
+        },
+        "table": "Tally"
+      }
+    }
+  ]
+}

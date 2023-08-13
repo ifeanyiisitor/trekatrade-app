@@ -1,0 +1,17 @@
+{
+  "id": "mig_ciimb6bdf6unauar0d30",
+  "parentID": "mig_cii5o7qs7o0c3spgcds0",
+  "checksum": "1:1b2bd7baebef9bf3a4b3ea0cecde2b0d82feb6e8a515d9f344bd412e33b49e0f",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "isTemplateRecord",
+          "type": "bool",
+          "defaultValue": "false"
+        },
+        "table": "AssetDefaults"
+      }
+    }
+  ]
+}

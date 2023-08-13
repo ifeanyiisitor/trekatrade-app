@@ -1,0 +1,20 @@
+{
+  "id": "mig_ci5lchojgcenc2v0jq50",
+  "parentID": "mig_ci5lc8lro0rfgu98dikg",
+  "checksum": "1:ca23f6d2002d9b674674d8fa5b5de0b05a371e00bcc1930eeaf5b66806c47278",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "asset",
+          "type": "link",
+          "link": {
+            "table": "Asset"
+          },
+          "unique": true
+        },
+        "table": "Investment"
+      }
+    }
+  ]
+}

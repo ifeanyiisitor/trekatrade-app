@@ -1,0 +1,13 @@
+{
+  "id": "mig_cj6b7g90mrhcetfj4rdg",
+  "parentID": "mig_cj6apha6q9t2gjugj760",
+  "checksum": "1:6143ca5777be6713effd363a6c49bb293b89d8199792c9f08f8bdb142ccce3fd",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "fibonacciStartingThreshold",
+        "table": "AssetDefaults"
+      }
+    }
+  ]
+}

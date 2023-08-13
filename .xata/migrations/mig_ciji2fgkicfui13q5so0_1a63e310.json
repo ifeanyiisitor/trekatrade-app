@@ -1,0 +1,13 @@
+{
+  "id": "mig_ciji2fgkicfui13q5so0",
+  "parentID": "mig_cijhvb8kicfui13q5sn0",
+  "checksum": "1:1a63e3103a0da5496e1022d980e8c586d66cd4a04694a4f73397da5024837f88",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "lastPriceTrackingTime",
+        "table": "AccountAsset"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "mig_cijg5qnemt0dbqndcnn0",
+  "parentID": "mig_cijfj47emt0dbqndckc0",
+  "checksum": "1:ad5eea95932f69ee5c071ae915879693ef7e7895914dd06c459ef2279ce3e1b9",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "lastPrice",
+          "type": "float"
+        },
+        "table": "AssetDefaults"
+      }
+    }
+  ]
+}

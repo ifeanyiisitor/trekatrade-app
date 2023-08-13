@@ -1,0 +1,16 @@
+{
+  "id": "mig_cisonouon47akp460etg",
+  "parentID": "mig_ciqms5as416gfa21srb0",
+  "checksum": "1:6ad21835c9cf34228ebfe86ee2c7c384fe0be64b37ddd10b3c15da659070f5a9",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "notes",
+          "type": "string"
+        },
+        "table": "AssetDefaults"
+      }
+    }
+  ]
+}

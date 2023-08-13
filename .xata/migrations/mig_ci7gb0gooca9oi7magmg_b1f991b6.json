@@ -1,0 +1,13 @@
+{
+  "id": "mig_ci7gb0gooca9oi7magmg",
+  "parentID": "mig_ci7g8i5ro0rfgu98iqdg",
+  "checksum": "1:b1f991b66e1ece44d0fc2860506cdfc3c2e8ba19cce3e411366ec7e14de49eee",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "unitSellPrice",
+        "table": "SellOrder"
+      }
+    }
+  ]
+}

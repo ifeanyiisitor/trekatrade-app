@@ -1,0 +1,17 @@
+{
+  "id": "mig_cieml27ldm3ot4msqi4g",
+  "parentID": "mig_ciemkii8feqhmds6lde0",
+  "checksum": "1:b381a6c454eb795a47890d5612f4a0c1208750a449fcaf69ae00da0d16e607fa",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "level",
+          "type": "int",
+          "defaultValue": "3"
+        },
+        "table": "Asset"
+      }
+    }
+  ]
+}

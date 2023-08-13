@@ -1,0 +1,17 @@
+{
+  "id": "mig_cj3uj033nm60aad1fmmg",
+  "parentID": "mig_cj3uipr3nm60aad1fmlg",
+  "checksum": "1:80e98206991635e3a64914f66eeebb569029cdd018c44de81403bcd84c8a0c3a",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "totalInvested",
+          "type": "float",
+          "defaultValue": "0"
+        },
+        "table": "Account"
+      }
+    }
+  ]
+}

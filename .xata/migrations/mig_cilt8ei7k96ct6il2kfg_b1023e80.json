@@ -1,0 +1,17 @@
+{
+  "id": "mig_cilt8ei7k96ct6il2kfg",
+  "parentID": "mig_cilt88a7k96ct6il2k80",
+  "checksum": "1:b1023e802cad7ad814739c9b406b6b9b4e39433c84dfdd8db616df86533d0ec2",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "percentageCashToPauseBuying",
+          "type": "float",
+          "defaultValue": "0"
+        },
+        "table": "Account"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "mig_cii4ohup5j0d7vnfcl9g",
+  "parentID": "mig_cii1aofig93qqm1oaj8g",
+  "checksum": "1:567674ee0e811c98c23e1c1ca85a800060cead6b050fb884d4d45b1a652c12b8",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "isEnabled",
+          "type": "bool",
+          "defaultValue": "false"
+        },
+        "table": "Account"
+      }
+    }
+  ]
+}

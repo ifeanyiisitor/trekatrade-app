@@ -1,0 +1,18 @@
+{
+  "id": "mig_cii5o7qs7o0c3spgcds0",
+  "parentID": "mig_cii5o1obbkfk2aiahamg",
+  "checksum": "1:4c9a7291155fd90fb41933f3ff0e24e9051f9a3352d85310fd503a3d809429b1",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "minimumInvestmentAmount",
+          "type": "float",
+          "notNull": true,
+          "defaultValue": "1"
+        },
+        "table": "AssetDefaults"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "mig_cicpc7ptpeu9gtf6815g",
+  "parentID": "mig_cicpbq9tpeu9gtf6814g",
+  "checksum": "1:043a4252d1adaf38c7df54c988a6596d67d4bd0e0e79936d82530e5365df27c3",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "symbol",
+          "type": "string"
+        },
+        "table": "Asset"
+      }
+    }
+  ]
+}

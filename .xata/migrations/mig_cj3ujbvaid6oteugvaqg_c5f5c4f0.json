@@ -1,0 +1,17 @@
+{
+  "id": "mig_cj3ujbvaid6oteugvaqg",
+  "parentID": "mig_cj3uj033nm60aad1fmmg",
+  "checksum": "1:c5f5c4f0a36dfa48e288f050abb9b8f5adbd81fecf1355f436010f5fb109fc6d",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "realizedProfit",
+          "type": "float",
+          "defaultValue": "0"
+        },
+        "table": "Account"
+      }
+    }
+  ]
+}

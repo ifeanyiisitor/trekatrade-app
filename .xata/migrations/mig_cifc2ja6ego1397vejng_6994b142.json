@@ -1,0 +1,16 @@
+{
+  "id": "mig_cifc2ja6ego1397vejng",
+  "parentID": "mig_cif9uda6ego1397ve9ig",
+  "checksum": "1:6994b1426d1dad93bd92661c79e37d46cb63ddc9a927ac981247661209325c45",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "isPositionOpen",
+          "type": "bool"
+        },
+        "table": "AccountAsset"
+      }
+    }
+  ]
+}

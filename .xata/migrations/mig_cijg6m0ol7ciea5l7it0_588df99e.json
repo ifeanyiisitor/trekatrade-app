@@ -1,0 +1,13 @@
+{
+  "id": "mig_cijg6m0ol7ciea5l7it0",
+  "parentID": "mig_cijg6kokicfui13q5qj0",
+  "checksum": "1:588df99e90046ab0bc5ab3c7fdd8db3bba7413525a609345fd6ac7a3a7da4a2a",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "priceTrackingInterval",
+        "table": "AssetDefaults"
+      }
+    }
+  ]
+}

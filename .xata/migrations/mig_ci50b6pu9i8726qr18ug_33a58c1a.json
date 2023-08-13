@@ -1,0 +1,17 @@
+{
+  "id": "mig_ci50b6pu9i8726qr18ug",
+  "parentID": "mig_ci503nt11fg3ibrs8dm0",
+  "checksum": "1:33a58c1a8459d013f0e1ce481b7a40de5aac1f0421184a67171f540fd64366c3",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "profitInTheRed",
+          "type": "float",
+          "defaultValue": "0"
+        },
+        "table": "Tally"
+      }
+    }
+  ]
+}

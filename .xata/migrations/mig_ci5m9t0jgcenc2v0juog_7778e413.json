@@ -1,0 +1,14 @@
+{
+  "id": "mig_ci5m9t0jgcenc2v0juog",
+  "parentID": "mig_ci5m9qdro0rfgu98dlb0",
+  "checksum": "1:7778e41353a1a781cb90cfb6681d834f2cbfeb6557d4590d774893a1d2753701",
+  "operations": [
+    {
+      "renameColumn": {
+        "newName": "position",
+        "oldName": "holding",
+        "table": "AssetOrder"
+      }
+    }
+  ]
+}

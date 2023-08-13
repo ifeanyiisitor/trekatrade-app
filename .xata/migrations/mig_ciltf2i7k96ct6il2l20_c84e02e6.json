@@ -1,0 +1,13 @@
+{
+  "id": "mig_ciltf2i7k96ct6il2l20",
+  "parentID": "mig_cilt8ei7k96ct6il2kfg",
+  "checksum": "1:c84e02e6a2ffc59dea7d39b8f6e1cf3b4ecba7e6b1c3a2c5370436e58f04b44f",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "percentageCashToAllowBuying",
+        "table": "Account"
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "mig_cilspij10nsb116jnv20",
+  "parentID": "mig_cik0vi27k96ct6iku2t0",
+  "checksum": "1:94e668a064aba96c91465cff9bd13292bf978f620e48af0fa98f748f30debda9",
+  "operations": [
+    {
+      "removeTable": {
+        "table": "ActivityLog"
+      }
+    }
+  ]
+}

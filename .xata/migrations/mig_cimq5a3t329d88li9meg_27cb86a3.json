@@ -1,0 +1,17 @@
+{
+  "id": "mig_cimq5a3t329d88li9meg",
+  "parentID": "mig_cimq5315dmipkaoflatg",
+  "checksum": "1:27cb86a319f72a160038e7a843c6f55ea2b8cc24588bc49d0d86b6405ca8fbba",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "capitalIncludingProfits",
+          "type": "float",
+          "defaultValue": "0"
+        },
+        "table": "Tally"
+      }
+    }
+  ]
+}

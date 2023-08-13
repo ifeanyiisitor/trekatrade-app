@@ -1,0 +1,17 @@
+{
+  "id": "mig_civ5steon47akp469jb0",
+  "parentID": "mig_civ5snasht810mqago8g",
+  "checksum": "1:576e2ae3cd08585be547d573f587db7a1df7c4cb56876117cae602d975162d4d",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "doubleDownIntervalRules",
+          "type": "string",
+          "defaultValue": "{ 'i > -2': '3 hours', 'i <= -2 and i > -3': '1 hour', 'i <= -3': '15 minutes' }"
+        },
+        "table": "AssetDefaults"
+      }
+    }
+  ]
+}

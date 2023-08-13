@@ -1,0 +1,16 @@
+{
+  "id": "mig_ci7hmv0ooca9oi7mamc0",
+  "parentID": "mig_ci7gb60jgcenc2v0q35g",
+  "checksum": "1:b037d81fa509ae7ba8a4e5650f93ae70a6facdb1a2c201923bcd12c3e0f970d9",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "statusData",
+          "type": "string"
+        },
+        "table": "Asset"
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "mig_ci5m5m0jgcenc2v0jthg",
+  "parentID": "mig_ci5ldu8jgcenc2v0jqi0",
+  "checksum": "1:0a321efec9f01527031a2e6867f23e58be6994edcfd284e312600cecc641fc01",
+  "operations": [
+    {
+      "renameTable": {
+        "newName": "AssetHolding",
+        "oldName": "Investment"
+      }
+    }
+  ]
+}

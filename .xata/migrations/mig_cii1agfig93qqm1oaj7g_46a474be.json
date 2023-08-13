@@ -1,0 +1,16 @@
+{
+  "id": "mig_cii1agfig93qqm1oaj7g",
+  "parentID": "mig_cii1a7nig93qqm1oaj6g",
+  "checksum": "1:46a474be1564df8678adb674a08444a1eab14d3c0b1f642a1542312c272fe959",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "alpacaApiSecret",
+          "type": "string"
+        },
+        "table": "Account"
+      }
+    }
+  ]
+}

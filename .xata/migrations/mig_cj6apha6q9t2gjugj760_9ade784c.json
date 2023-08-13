@@ -1,0 +1,17 @@
+{
+  "id": "mig_cj6apha6q9t2gjugj760",
+  "parentID": "mig_cj6ap1a6q9t2gjugj750",
+  "checksum": "1:9ade784c34f72150c6f2704fea3af0e4b43292b9846078d8718de041d7702b35",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "fibonacciStartingThreshold",
+          "type": "float",
+          "defaultValue": "3"
+        },
+        "table": "GlobalAssetDefaults"
+      }
+    }
+  ]
+}

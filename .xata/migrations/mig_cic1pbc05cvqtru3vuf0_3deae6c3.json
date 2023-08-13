@@ -1,0 +1,19 @@
+{
+  "id": "mig_cic1pbc05cvqtru3vuf0",
+  "parentID": "mig_cic10d405cvqtru3vpj0",
+  "checksum": "1:3deae6c3ddef91622b726639aeb43a903a4728b990c3624c32bba6e99108bd86",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "account",
+          "type": "link",
+          "link": {
+            "table": "Account"
+          }
+        },
+        "table": "SellOrder"
+      }
+    }
+  ]
+}

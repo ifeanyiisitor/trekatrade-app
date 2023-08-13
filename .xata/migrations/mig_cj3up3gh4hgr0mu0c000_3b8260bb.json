@@ -1,0 +1,20 @@
+{
+  "id": "mig_cj3up3gh4hgr0mu0c000",
+  "parentID": "mig_cj3um18h4hgr0mu0bug0",
+  "checksum": "1:3b8260bbf1aece1b9f6eede3397a7b9152fa9274437fb41160cc32f38af3a3ac",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "tally",
+          "type": "link",
+          "link": {
+            "table": "Tally"
+          },
+          "unique": true
+        },
+        "table": "Account"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "mig_ci631n5ro0rfgu98f3m0",
+  "parentID": "mig_ci630u5ro0rfgu98f3k0",
+  "checksum": "1:b25ae3e202bfc1a8b4c43b8011e07ea8c3953d03273f0878476cdfb84c5dda20",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "status",
+          "type": "string",
+          "notNull": true,
+          "defaultValue": "open"
+        },
+        "table": "SellGreenAssetsInstruction"
+      }
+    }
+  ]
+}

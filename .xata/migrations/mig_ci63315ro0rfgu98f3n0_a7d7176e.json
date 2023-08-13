@@ -1,0 +1,18 @@
+{
+  "id": "mig_ci63315ro0rfgu98f3n0",
+  "parentID": "mig_ci631n5ro0rfgu98f3m0",
+  "checksum": "1:a7d7176e4841f370d2e1ceafba8e8774d971db686e2251549fbf5bc887f83ccf",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "status",
+          "type": "string",
+          "notNull": true,
+          "defaultValue": "open"
+        },
+        "table": "Instruction"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "mig_ci6ad1lro0rfgu98fqlg",
+  "parentID": "mig_ci67o48ooca9oi7m713g",
+  "checksum": "1:476f4e18511c9e0819c97b503c665d1c01d58e8cc8b048dceb00ffa140160a67",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "tradingCapital",
+          "type": "float",
+          "defaultValue": "0"
+        },
+        "table": "Tally"
+      }
+    }
+  ]
+}

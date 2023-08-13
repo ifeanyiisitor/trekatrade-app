@@ -1,0 +1,17 @@
+{
+  "id": "mig_ciltfaq7k96ct6il2l7g",
+  "parentID": "mig_ciltf2i7k96ct6il2l20",
+  "checksum": "1:f1d16d408ac4331d538470021a3a0739b3c86976c7bbc33567cf77bc1e058960",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "percentageCashToAllowBuying",
+          "type": "int",
+          "defaultValue": "40"
+        },
+        "table": "Account"
+      }
+    }
+  ]
+}

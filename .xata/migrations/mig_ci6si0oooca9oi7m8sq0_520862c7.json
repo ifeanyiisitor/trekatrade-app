@@ -1,0 +1,18 @@
+{
+  "id": "mig_ci6si0oooca9oi7m8sq0",
+  "parentID": "mig_ci6sh58ooca9oi7m8sp0",
+  "checksum": "1:520862c7efe2efb6c7039094514713e51aec4d6fb016a0d2fa0c572f5d3892b3",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "isOpen",
+          "type": "bool",
+          "notNull": true,
+          "defaultValue": "true"
+        },
+        "table": "Instruction"
+      }
+    }
+  ]
+}

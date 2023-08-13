@@ -1,0 +1,13 @@
+{
+  "id": "mig_ciemc0i8feqhmds6lck0",
+  "parentID": "mig_cicpc7ptpeu9gtf6815g",
+  "checksum": "1:61ee04f635ae1d2f15313bf0e59ef3168ab23374011d58a4221492e96ccdea6e",
+  "operations": [
+    {
+      "renameTable": {
+        "newName": "AccountAsset",
+        "oldName": "Asset"
+      }
+    }
+  ]
+}

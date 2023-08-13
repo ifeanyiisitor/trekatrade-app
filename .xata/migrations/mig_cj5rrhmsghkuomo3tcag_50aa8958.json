@@ -1,0 +1,13 @@
+{
+  "id": "mig_cj5rrhmsghkuomo3tcag",
+  "parentID": "mig_cj5rregkhf985a6ehbhg",
+  "checksum": "1:50aa8958ab3e1e23aa036547faec286cd6f1a2ab9d4db15aae89256de2d17cdf",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "shouldAllowBuying",
+        "table": "Account"
+      }
+    }
+  ]
+}

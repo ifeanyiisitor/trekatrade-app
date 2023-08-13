@@ -1,0 +1,12 @@
+{
+  "id": "mig_ciemh8a8feqhmds6lclg",
+  "parentID": "mig_ciemc0i8feqhmds6lck0",
+  "checksum": "1:363cc4e50ba75f7afba213396943a5d09476f499f7c86df82968401d82bf8b4a",
+  "operations": [
+    {
+      "addTable": {
+        "table": "Asset"
+      }
+    }
+  ]
+}

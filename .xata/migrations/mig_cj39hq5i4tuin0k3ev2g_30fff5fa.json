@@ -1,0 +1,16 @@
+{
+  "id": "mig_cj39hq5i4tuin0k3ev2g",
+  "parentID": "mig_cj33gidi4tuin0k3dtb0",
+  "checksum": "1:30fff5fa64ddb223029edc56422ea4c3558236e56f523642c9237560e0d4eb18",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "instruction",
+          "type": "string"
+        },
+        "table": "AccountAsset"
+      }
+    }
+  ]
+}

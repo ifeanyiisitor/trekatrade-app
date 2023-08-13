@@ -1,0 +1,12 @@
+{
+  "id": "mig_ci66nqlro0rfgu98fdcg",
+  "parentID": "mig_ci669d8jgcenc2v0l7o0",
+  "checksum": "1:81fe6e24857f4da7f7ab95608cb8c6f2b14122b6b9cb8973232f746279d7ccfe",
+  "operations": [
+    {
+      "removeTable": {
+        "table": "Posts"
+      }
+    }
+  ]
+}

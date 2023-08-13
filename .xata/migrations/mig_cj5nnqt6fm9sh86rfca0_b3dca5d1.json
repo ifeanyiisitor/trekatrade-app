@@ -1,0 +1,13 @@
+{
+  "id": "mig_cj5nnqt6fm9sh86rfca0",
+  "parentID": "mig_cj5nm52d61vvf6e8g5s0",
+  "checksum": "1:b3dca5d19d68e03094be64c3cbcf28ca624bd548e9c61047514cca41d462f1f6",
+  "operations": [
+    {
+      "renameTable": {
+        "newName": "GlobalAccountDefaults",
+        "oldName": "AccountDefaults"
+      }
+    }
+  ]
+}

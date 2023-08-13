@@ -1,0 +1,13 @@
+{
+  "id": "mig_cicpbq9tpeu9gtf6814g",
+  "parentID": "mig_cic2t0k05cvqtru403f0",
+  "checksum": "1:8a24b0448a85fbe587feaebb852d6e12f5e5856612d1d13ca003b0795f5860b5",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "symbol",
+        "table": "Asset"
+      }
+    }
+  ]
+}

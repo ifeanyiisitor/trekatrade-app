@@ -1,0 +1,17 @@
+{
+  "id": "mig_cj335hli4tuin0k3dsm0",
+  "parentID": "mig_cj31buti4tuin0k3dm6g",
+  "checksum": "1:a2a6594be0de96065ac7c815c829fd04ef4cbb2483b58b0899e4e43cf990e147",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "maxDoubleDownInvestmentPercentage",
+          "type": "float",
+          "defaultValue": "5"
+        },
+        "table": "AssetDefaults"
+      }
+    }
+  ]
+}

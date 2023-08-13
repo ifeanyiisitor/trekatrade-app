@@ -1,0 +1,18 @@
+{
+  "id": "mig_ci7g4n5ro0rfgu98iq4g",
+  "parentID": "mig_ci7g4aoooca9oi7maf7g",
+  "checksum": "1:00c109fc5bfe44aa876a8a62ada3fd5e0d6ceb4344e9e02db215a59ea039b346",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "qty",
+          "type": "float",
+          "notNull": true,
+          "defaultValue": "0"
+        },
+        "table": "SellOrder"
+      }
+    }
+  ]
+}

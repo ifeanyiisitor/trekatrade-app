@@ -1,0 +1,13 @@
+{
+  "id": "mig_cj3ulu0h4hgr0mu0bue0",
+  "parentID": "mig_cj3ult38ktn4muotfbsg",
+  "checksum": "1:a461d5b58bdb764f6bc3ac4da1d1676c98005652e3ee30c94b5a995d98f8e456",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "capitalExcludingProfits",
+        "table": "Account"
+      }
+    }
+  ]
+}

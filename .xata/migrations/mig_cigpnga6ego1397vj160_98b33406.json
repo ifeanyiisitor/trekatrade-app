@@ -1,0 +1,17 @@
+{
+  "id": "mig_cigpnga6ego1397vj160",
+  "parentID": "mig_cigpgoa6ego1397vivag",
+  "checksum": "1:98b3340659923b79a74c7c27f3f6d4ce76bc7ae0f6f1aa6a4821bd3ff1a5a56a",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "lastAdditionalBuyTime",
+          "type": "datetime",
+          "defaultValue": "now"
+        },
+        "table": "Account"
+      }
+    }
+  ]
+}

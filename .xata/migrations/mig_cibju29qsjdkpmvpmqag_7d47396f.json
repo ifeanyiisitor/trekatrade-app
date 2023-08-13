@@ -1,0 +1,19 @@
+{
+  "id": "mig_cibju29qsjdkpmvpmqag",
+  "parentID": "mig_cibjth9tpeu9gtf64050",
+  "checksum": "1:7d47396f120dfb04e7f8027eadcb60ac8889c597ef70377cb85e31fe69b5ab62",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "user",
+          "type": "link",
+          "link": {
+            "table": "User"
+          }
+        },
+        "table": "Account"
+      }
+    }
+  ]
+}

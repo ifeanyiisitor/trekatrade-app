@@ -1,0 +1,16 @@
+{
+  "id": "mig_ci5ldnojgcenc2v0jqd0",
+  "parentID": "mig_ci5ldglro0rfgu98din0",
+  "checksum": "1:3ddffda5f80a593f7df92f3eefa719e024d6fd7a5a83c829b3ff23a146e86fdd",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "totalInvested",
+          "type": "float"
+        },
+        "table": "Investment"
+      }
+    }
+  ]
+}

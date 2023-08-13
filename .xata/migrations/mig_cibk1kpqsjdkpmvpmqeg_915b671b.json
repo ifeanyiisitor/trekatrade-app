@@ -1,0 +1,20 @@
+{
+  "id": "mig_cibk1kpqsjdkpmvpmqeg",
+  "parentID": "mig_cibjvf1qsjdkpmvpmqbg",
+  "checksum": "1:915b671b3fe50a4cee57b656cf8f73cafa07cf53ac5a8dc6cb444c2052b510ac",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "account",
+          "type": "link",
+          "link": {
+            "table": "Account"
+          },
+          "unique": true
+        },
+        "table": "AssetDefaults"
+      }
+    }
+  ]
+}

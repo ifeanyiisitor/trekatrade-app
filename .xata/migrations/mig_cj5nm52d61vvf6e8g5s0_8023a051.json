@@ -1,0 +1,17 @@
+{
+  "id": "mig_cj5nm52d61vvf6e8g5s0",
+  "parentID": "mig_cj5nls2d61vvf6e8g5r0",
+  "checksum": "1:8023a0514a2f610e1ba60d82f575a33b9b0e838860b1e3da545ad8168b6e837e",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "enableReservedFundsFeature",
+          "type": "bool",
+          "defaultValue": "true"
+        },
+        "table": "AccountDefaults"
+      }
+    }
+  ]
+}

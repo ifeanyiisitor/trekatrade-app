@@ -1,0 +1,16 @@
+{
+  "id": "mig_ci5m8gojgcenc2v0ju3g",
+  "parentID": "mig_ci5m878jgcenc2v0jtp0",
+  "checksum": "1:21ba271cab0ce2f77029f5c897948b7721902fe4d2efaea74cc4c1205dd814d8",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "filledAvgPrice",
+          "type": "float"
+        },
+        "table": "AssetOrder"
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "mig_ci5lc8lro0rfgu98dikg",
+  "parentID": "mig_ci50b6pu9i8726qr18ug",
+  "checksum": "1:fc9a780499410903f321de35a8de74245fbc0836414d80eca71cb709f0b5fd9a",
+  "operations": [
+    {
+      "addTable": {
+        "table": "Investment"
+      }
+    }
+  ]
+}

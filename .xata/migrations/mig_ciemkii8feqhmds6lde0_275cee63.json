@@ -1,0 +1,17 @@
+{
+  "id": "mig_ciemkii8feqhmds6lde0",
+  "parentID": "mig_ciemj1fldm3ot4msqi3g",
+  "checksum": "1:275cee6349ca0d2845b6f142c69dbfc6b7e373d02ebfdd0e0d2d2aef8f8df23b",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "isEnabled",
+          "type": "bool",
+          "defaultValue": "true"
+        },
+        "table": "Asset"
+      }
+    }
+  ]
+}

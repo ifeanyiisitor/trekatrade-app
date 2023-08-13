@@ -1,0 +1,16 @@
+{
+  "id": "mig_cijgfm7emt0dbqndcon0",
+  "parentID": "mig_cijg75ool7ciea5l7j00",
+  "checksum": "1:d67f75f0eb64b2ffa7e56b4b5f78e1cee08e651dfc37c1578bfc5667ed9a9084",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "lastPriceTrackingTime",
+          "type": "datetime"
+        },
+        "table": "AccountAsset"
+      }
+    }
+  ]
+}

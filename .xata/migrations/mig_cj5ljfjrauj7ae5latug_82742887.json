@@ -1,0 +1,14 @@
+{
+  "id": "mig_cj5ljfjrauj7ae5latug",
+  "parentID": "mig_cj5ljdbddihk6a4ie4p0",
+  "checksum": "1:82742887e1f13021783d66cc2475e1dd93c9b0e1541cea1905b0e3e41df81ce8",
+  "operations": [
+    {
+      "renameColumn": {
+        "newName": "percentageReservedFunds",
+        "oldName": "percentageReserveFunds",
+        "table": "Account"
+      }
+    }
+  ]
+}

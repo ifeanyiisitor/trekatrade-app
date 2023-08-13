@@ -1,0 +1,16 @@
+{
+  "id": "mig_ci5m7atro0rfgu98dko0",
+  "parentID": "mig_ci5m6ggooca9oi7m5e10",
+  "checksum": "1:8ba356d5ac4be7c49de6b9c6ff8d5b148ad387582d84fc1a777a1241fdcd5a11",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "isFilled",
+          "type": "bool"
+        },
+        "table": "AssetOrder"
+      }
+    }
+  ]
+}

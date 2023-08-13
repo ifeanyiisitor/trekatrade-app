@@ -1,0 +1,17 @@
+{
+  "id": "mig_cik0vi27k96ct6iku2t0",
+  "parentID": "mig_cik0gpa7k96ct6iktv60",
+  "checksum": "1:c47db9bf757ec908baa6a8f9665bdd71d8cb3cb3d86fb01172ce6fca15cba4cd",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "lastPriceTrackingIntervalResetTime",
+          "type": "datetime",
+          "defaultValue": "now"
+        },
+        "table": "Account"
+      }
+    }
+  ]
+}

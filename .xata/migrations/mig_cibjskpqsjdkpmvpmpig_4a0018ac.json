@@ -1,0 +1,18 @@
+{
+  "id": "mig_cibjskpqsjdkpmvpmpig",
+  "parentID": "mig_cibjsc1qsjdkpmvpmp8g",
+  "checksum": "1:4a0018ac5f9691e7b881700ff6b8973bb6726a193d8db784a049d8cf3245ffb1",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "email",
+          "type": "string",
+          "notNull": true,
+          "defaultValue": ""
+        },
+        "table": "User"
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "mig_ci62v0tro0rfgu98f2a0",
+  "parentID": "mig_ci5mbqoooca9oi7m5efg",
+  "checksum": "1:16846f7806c37163bc114fd481ac0aa05d789ebe0c0260ba0c2f9cb2089eac16",
+  "operations": [
+    {
+      "removeTable": {
+        "table": "AssetOrder"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "mig_cj5o6pad61vvf6e8g96g",
+  "parentID": "mig_cj5o6mid61vvf6e8g95g",
+  "checksum": "1:e802d3e8221070a4c0f71c96628b693dcfb705711e4b2378d5bdb3befc2a975b",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "percentageReservedFunds",
+          "type": "float"
+        },
+        "table": "Account"
+      }
+    }
+  ]
+}

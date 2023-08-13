@@ -1,6 +1,6 @@
 import { Props } from '@/lib/types'
-import { MainSideMenu } from '../components/MainSideMenu'
-import { UserSideMenu } from '../components/UserSideMenu'
+import { MainSideMenu } from '../components/main-side-menu'
+import { UserSideMenu } from '../components/user-side-menu'
 
 export default function AdminPageLayout({ children }: Props) {
   return (

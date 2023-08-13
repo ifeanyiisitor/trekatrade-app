@@ -1,0 +1,16 @@
+{
+  "id": "mig_ci5ldu8jgcenc2v0jqi0",
+  "parentID": "mig_ci5ldnojgcenc2v0jqd0",
+  "checksum": "1:3459453a3d97f685f945a097dc2723cd06eef6a3e24fd20d1d47a13d4203d951",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "qty",
+          "type": "float"
+        },
+        "table": "Investment"
+      }
+    }
+  ]
+}

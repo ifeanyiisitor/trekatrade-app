@@ -1,0 +1,12 @@
+{
+  "id": "mig_cic077ptpeu9gtf65950",
+  "parentID": "mig_cic04ahqsjdkpmvpnvt0",
+  "checksum": "1:17467125a2bc53eae30da8442269b8307e6c6dd5b5e342ccddafc48c752f675c",
+  "operations": [
+    {
+      "addTable": {
+        "table": "AccountFeature"
+      }
+    }
+  ]
+}

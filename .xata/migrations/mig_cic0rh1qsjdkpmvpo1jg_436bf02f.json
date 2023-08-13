@@ -1,0 +1,13 @@
+{
+  "id": "mig_cic0rh1qsjdkpmvpo1jg",
+  "parentID": "mig_cic0m9405cvqtru3voag",
+  "checksum": "1:436bf02f5f9be7a26e5a0b32a0e76ce9f56c80c2f8dbc283e269c89f74203675",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "feature",
+        "table": "AccountFeature"
+      }
+    }
+  ]
+}

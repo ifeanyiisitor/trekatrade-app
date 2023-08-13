@@ -1,0 +1,13 @@
+{
+  "id": "mig_ciluuer10nsb116jo280",
+  "parentID": "mig_ciltfpa7k96ct6il2lp0",
+  "checksum": "1:6717859d1688d28bf4fe17a53d1c3317ae56fb9209ea96edb988fa4b1ac5132d",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "shouldPauseBuying",
+        "table": "Account"
+      }
+    }
+  ]
+}

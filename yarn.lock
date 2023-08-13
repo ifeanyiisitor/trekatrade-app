@@ -478,6 +478,18 @@
   dependencies:
     tslib "^2.4.0"
 
+"@t3-oss/env-core@0.6.0":
+  version "0.6.0"
+  resolved "https://registry.npmjs.org/@t3-oss/env-core/-/env-core-0.6.0.tgz#a2e6a6a2b166aad2df7ecc5e7a72400946a84fbe"
+  integrity sha512-3FkPAba069WRZVVab/sB1m3eSGn/rZeypx5k+sWEu1d+k0OQdRDnvFS+7MtxYgqVrwaRk3b7yVnX2dgSPVmWPQ==
+
+"@t3-oss/env-nextjs@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.npmjs.org/@t3-oss/env-nextjs/-/env-nextjs-0.6.0.tgz#47b44d4fc6f872f3782c4e1ebfe94a55f09dd1e1"
+  integrity sha512-SpzcGNIbUYcQw4zPPFeRJqCC1560zL7QmB0puIqOnuCsmykPkqHPX+n9CNZLXVQerboHzfvb7Kd+jAdouk72Vw==
+  dependencies:
+    "@t3-oss/env-core" "0.6.0"
+
 "@types/body-parser@*":
   version "1.19.2"
   resolved "https://registry.npmjs.org/@types/body-parser/-/body-parser-1.19.2.tgz#aea2059e28b7658639081347ac4fab3de166e6f0"
@@ -682,6 +694,11 @@
   dependencies:
     "@typescript-eslint/types" "6.3.0"
     eslint-visitor-keys "^3.4.1"
+
+"@xata.io/client@^0.25.2":
+  version "0.25.2"
+  resolved "https://registry.npmjs.org/@xata.io/client/-/client-0.25.2.tgz#79e44d76d93bb575abdb9545ebc4954ee69aa46f"
+  integrity sha512-W3eBfTM2PZzrH5+YLW6niasrgE31oHkVPqf5JW/hosq6M/2F2K4EUiwFoRKRnpsRUo9GP1VmqGvVX2eJAl73SA==
 
 acorn-jsx@^5.3.2:
   version "5.3.2"
@@ -2506,6 +2523,11 @@ readdirp@~3.6.0:
   dependencies:
     picomatch "^2.2.1"
 
+reflect-metadata@^0.1.13:
+  version "0.1.13"
+  resolved "https://registry.npmjs.org/reflect-metadata/-/reflect-metadata-0.1.13.tgz#67ae3ca57c972a2aa1642b10fe363fe32d49dc08"
+  integrity sha512-Ts1Y/anZELhSsjMcU605fU9RE4Oi3p5ORujwbIKXfWa+0Zxs510Qrmrce5/Jowq3cHSZSJqBjypxmHarc+vEWg==
+
 regenerator-runtime@^0.14.0:
   version "0.14.0"
   resolved "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.14.0.tgz#5e19d68eb12d486f797e15a3c6a918f7cec5eb45"
@@ -2604,6 +2626,11 @@ semver@^7.5.4:
   integrity sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==
   dependencies:
     lru-cache "^6.0.0"
+
+server-only@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.npmjs.org/server-only/-/server-only-0.0.1.tgz#0f366bb6afb618c37c9255a314535dc412cd1c9e"
+  integrity sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==
 
 shebang-command@^2.0.0:
   version "2.0.0"
@@ -2941,6 +2968,11 @@ typed-array-length@^1.0.4:
     call-bind "^1.0.2"
     for-each "^0.3.3"
     is-typed-array "^1.1.9"
+
+typedi@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.npmjs.org/typedi/-/typedi-0.10.0.tgz#e8f9a5ee100b84addbdfb57fe90d8d9ed2a21dea"
+  integrity sha512-v3UJF8xm68BBj6AF4oQML3ikrfK2c9EmZUyLOfShpJuItAqVBHWP/KtpGinkSsIiP6EZyyb6Z3NXyW9dgS9X1w==
 
 typescript@5.1.6:
   version "5.1.6"

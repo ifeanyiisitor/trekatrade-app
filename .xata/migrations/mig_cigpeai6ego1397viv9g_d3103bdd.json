@@ -1,0 +1,17 @@
+{
+  "id": "mig_cigpeai6ego1397viv9g",
+  "parentID": "mig_cifiaptt9r7luhtkn7tg",
+  "checksum": "1:d3103bdd9be720c72280fe5b65d20f44b5fa3aa9a988005b30f8ce841acd5376",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "totalAdditionalAssetsToBuy",
+          "type": "int",
+          "defaultValue": "2"
+        },
+        "table": "Account"
+      }
+    }
+  ]
+}

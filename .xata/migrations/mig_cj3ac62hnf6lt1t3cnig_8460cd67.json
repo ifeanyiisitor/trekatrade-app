@@ -1,0 +1,13 @@
+{
+  "id": "mig_cj3ac62hnf6lt1t3cnig",
+  "parentID": "mig_cj3a882hnf6lt1t3cn80",
+  "checksum": "1:8460cd67f333ff7fc367fee4f363d613c72828f8c136cb5463d1b21900bb580d",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "instruction",
+        "table": "AccountAsset"
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "mig_cijg6kokicfui13q5qj0",
+  "parentID": "mig_cijg607emt0dbqndcno0",
+  "checksum": "1:24d1a9e27d189411ba6c15db715097828b5e0d5aa58873f60d2dd9b3f8fa120c",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "lastPrice",
+        "table": "AssetDefaults"
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "mig_cj3ulmgh4hgr0mu0bu3g",
+  "parentID": "mig_cj3ujsoh4hgr0mu0bse0",
+  "checksum": "1:bc18021e1e881df5d8ff0a37ad19b09c037e2c16fcc6182f084a302c719b802e",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "availableCash",
+        "table": "Account"
+      }
+    }
+  ]
+}

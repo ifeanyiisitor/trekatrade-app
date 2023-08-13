@@ -1,0 +1,17 @@
+{
+  "id": "mig_cif9u826ego1397ve9gg",
+  "parentID": "mig_cieml27ldm3ot4msqi4g",
+  "checksum": "1:666f6cbcee63ce8086b9aa39d534aaeca278f224bd6a28cf45dbaa6de3618686",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "maxInitialAssets",
+          "type": "int",
+          "defaultValue": "5"
+        },
+        "table": "Account"
+      }
+    }
+  ]
+}

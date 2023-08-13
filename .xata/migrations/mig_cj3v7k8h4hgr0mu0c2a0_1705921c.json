@@ -1,0 +1,17 @@
+{
+  "id": "mig_cj3v7k8h4hgr0mu0c2a0",
+  "parentID": "mig_cj3up3gh4hgr0mu0c000",
+  "checksum": "1:1705921cb8ff928881b83de62232ada54ec9e15155d4ccdc3d7c0cc4e2e80d13",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "equity",
+          "type": "float",
+          "defaultValue": "0"
+        },
+        "table": "Tally"
+      }
+    }
+  ]
+}

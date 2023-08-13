@@ -1,0 +1,17 @@
+{
+  "id": "mig_ci7g77lro0rfgu98iqbg",
+  "parentID": "mig_ci7g6odro0rfgu98iqag",
+  "checksum": "1:7719a74fbb737ff842c6ff95e5034b774379c20bdd33d8f74820e80ceabbe1e9",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "platformId",
+          "type": "string",
+          "unique": true
+        },
+        "table": "SellOrder"
+      }
+    }
+  ]
+}

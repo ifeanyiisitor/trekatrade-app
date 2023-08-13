@@ -1,0 +1,14 @@
+{
+  "id": "mig_cif9uda6ego1397ve9ig",
+  "parentID": "mig_cif9u826ego1397ve9gg",
+  "checksum": "1:1dcaa58b6900980c6bb379c14feaf7307c119ab3cc2daf36c7c093403aaf6d3e",
+  "operations": [
+    {
+      "renameColumn": {
+        "newName": "maxInitialPositions",
+        "oldName": "maxInitialAssets",
+        "table": "Account"
+      }
+    }
+  ]
+}

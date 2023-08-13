@@ -1,0 +1,13 @@
+{
+  "id": "mig_cj6bfdp45he2dg23isrg",
+  "parentID": "mig_cj6bc6p45he2dg23isqg",
+  "checksum": "1:74cc8d9125c7fb2a1e759e53bdaaa4b5c2dd98dcc8571003325d97e21419b599",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "doubleDownIntervalRules",
+        "table": "AssetDefaults"
+      }
+    }
+  ]
+}

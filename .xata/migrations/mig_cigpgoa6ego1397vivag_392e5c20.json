@@ -1,0 +1,17 @@
+{
+  "id": "mig_cigpgoa6ego1397vivag",
+  "parentID": "mig_cigpeai6ego1397viv9g",
+  "checksum": "1:392e5c206a532f047a5aafe6b831981e86286a1030a9cf0e53ca19d0414a3f54",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "additionalAssetBuyInterval",
+          "type": "string",
+          "defaultValue": "24 hours"
+        },
+        "table": "Account"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "mig_cii1aofig93qqm1oaj8g",
+  "parentID": "mig_cii1agfig93qqm1oaj7g",
+  "checksum": "1:62786b69a0a6db6c0c7b7eaf3fe6b09c103f1272fa3f911f0cc59af446e0145f",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "isPaper",
+          "type": "bool"
+        },
+        "table": "Account"
+      }
+    }
+  ]
+}

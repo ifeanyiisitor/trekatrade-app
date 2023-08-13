@@ -1,0 +1,16 @@
+{
+  "id": "mig_cj1v5a5i4tuin0k39j00",
+  "parentID": "mig_civ6106on47akp469jv0",
+  "checksum": "1:f8cd5655878786a7289ccf3776835d9909f16ddfc056bcf85e3236b9c8fd066a",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "note",
+          "type": "string"
+        },
+        "table": "Asset"
+      }
+    }
+  ]
+}

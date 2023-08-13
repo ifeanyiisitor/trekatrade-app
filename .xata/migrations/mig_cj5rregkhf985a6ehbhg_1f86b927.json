@@ -1,0 +1,17 @@
+{
+  "id": "mig_cj5rregkhf985a6ehbhg",
+  "parentID": "mig_cj5o6pad61vvf6e8g96g",
+  "checksum": "1:1f86b9277f04dc6e3c033e81c351b4988c6b254465b41ffba816579f0019d0ab",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "shouldAllowBuying",
+          "type": "bool",
+          "defaultValue": "true"
+        },
+        "table": "GlobalAccountDefaults"
+      }
+    }
+  ]
+}

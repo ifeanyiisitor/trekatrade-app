@@ -1,0 +1,14 @@
+{
+  "id": "mig_ci6tv6gjgcenc2v0nsh0",
+  "parentID": "mig_ci6sj4gooca9oi7m8ss0",
+  "checksum": "1:597a36384c1ee8189b39ca4271160a032ab91396e9c68ec3199077a0006c0c5b",
+  "operations": [
+    {
+      "renameColumn": {
+        "newName": "name",
+        "oldName": "type",
+        "table": "Instruction"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "mig_ci5m6ggooca9oi7m5e10",
+  "parentID": "mig_ci5m630ooca9oi7m5e00",
+  "checksum": "1:f688a0d7d349b1a80ce6a3c2690e2ded91d77a72eb9079df6ed8b6043ec77bc0",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "holding",
+          "type": "link",
+          "link": {
+            "table": "AssetHolding"
+          }
+        },
+        "table": "AssetOrder"
+      }
+    }
+  ]
+}

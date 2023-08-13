@@ -1,0 +1,13 @@
+{
+  "id": "mig_cj5o6e2d61vvf6e8g93g",
+  "parentID": "mig_cj5nnqt6fm9sh86rfca0",
+  "checksum": "1:ea252050934583539c3c61c46e40aa63b7c2d000ce4ef6c5992668c27b90b631",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "enableReservedFundsFeature",
+        "table": "Account"
+      }
+    }
+  ]
+}

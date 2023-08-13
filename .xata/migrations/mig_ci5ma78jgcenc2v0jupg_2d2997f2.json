@@ -1,0 +1,16 @@
+{
+  "id": "mig_ci5ma78jgcenc2v0jupg",
+  "parentID": "mig_ci5m9t0jgcenc2v0juog",
+  "checksum": "1:2d2997f2e2d5116dd3b39e7ec1559085ed45f89353dd53d1db14ad2d3abc502e",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "soldAt",
+          "type": "datetime"
+        },
+        "table": "AssetPosition"
+      }
+    }
+  ]
+}

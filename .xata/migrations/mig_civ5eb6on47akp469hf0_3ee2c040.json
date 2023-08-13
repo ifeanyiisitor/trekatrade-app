@@ -1,0 +1,16 @@
+{
+  "id": "mig_civ5eb6on47akp469hf0",
+  "parentID": "mig_civ5e0isht810mqagm80",
+  "checksum": "1:3ee2c040b6c645d82f59895d12c16366f75a9b8137f288c8856ce1cb3b0e266b",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "doubleDownIntervalRules",
+          "type": "string"
+        },
+        "table": "AccountAsset"
+      }
+    }
+  ]
+}

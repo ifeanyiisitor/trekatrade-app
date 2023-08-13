@@ -1,0 +1,14 @@
+{
+  "id": "mig_ci7g595ro0rfgu98iq6g",
+  "parentID": "mig_ci7g535ro0rfgu98iq5g",
+  "checksum": "1:aaf85e442230202feae89f93cae3248dfcdfc870f5beb5e48cbb397c6f254dc9",
+  "operations": [
+    {
+      "renameColumn": {
+        "newName": "avgUnitBuyPrice",
+        "oldName": "avgBuyPrice",
+        "table": "SellOrder"
+      }
+    }
+  ]
+}

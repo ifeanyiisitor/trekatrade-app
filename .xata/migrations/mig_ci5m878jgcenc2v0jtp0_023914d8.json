@@ -1,0 +1,16 @@
+{
+  "id": "mig_ci5m878jgcenc2v0jtp0",
+  "parentID": "mig_ci5m7atro0rfgu98dko0",
+  "checksum": "1:023914d82ec90d74b899dbfb299eda3aa225b17271e3fd9a2d57b0e141a519ff",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "qty",
+          "type": "float"
+        },
+        "table": "AssetOrder"
+      }
+    }
+  ]
+}

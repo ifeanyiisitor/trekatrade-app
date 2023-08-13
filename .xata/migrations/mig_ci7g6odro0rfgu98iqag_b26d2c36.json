@@ -1,0 +1,16 @@
+{
+  "id": "mig_ci7g6odro0rfgu98iqag",
+  "parentID": "mig_ci7g650jgcenc2v0q2i0",
+  "checksum": "1:b26d2c36158d2af2ab38168882b9f2c6fe853f43d4711fb640dacdc9e9d42e33",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "status",
+          "type": "string"
+        },
+        "table": "SellOrder"
+      }
+    }
+  ]
+}

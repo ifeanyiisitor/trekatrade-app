@@ -1,0 +1,18 @@
+{
+  "id": "mig_cibjvf1qsjdkpmvpmqbg",
+  "parentID": "mig_cibju29qsjdkpmvpmqag",
+  "checksum": "1:b18c103567e4f51eb6645461934b4efbeaac9ccb307cbd40e8976af97ac4aa3e",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "name",
+          "type": "string",
+          "notNull": true,
+          "defaultValue": ""
+        },
+        "table": "Account"
+      }
+    }
+  ]
+}

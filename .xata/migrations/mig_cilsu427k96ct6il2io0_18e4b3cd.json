@@ -1,0 +1,17 @@
+{
+  "id": "mig_cilsu427k96ct6il2io0",
+  "parentID": "mig_cilst10j4ri6nsr4679g",
+  "checksum": "1:18e4b3cdecf10a3c3cf65a6b59aba312e6c9aa5e214e73e093aec20754315bbf",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "percentageAvailableCashToAllowBuying",
+          "type": "float",
+          "defaultValue": "40"
+        },
+        "table": "Account"
+      }
+    }
+  ]
+}

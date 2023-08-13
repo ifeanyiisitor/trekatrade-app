@@ -1,0 +1,12 @@
+{
+  "id": "mig_ci62vmlro0rfgu98f2lg",
+  "parentID": "mig_ci62v25ro0rfgu98f2b0",
+  "checksum": "1:21360c3f1dbf85b2b7e345313e82a47a04b3adffb9fac8b62092fd648acc1355",
+  "operations": [
+    {
+      "addTable": {
+        "table": "Instruction"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "mig_cijfj47emt0dbqndckc0",
+  "parentID": "mig_cijb8vbdf6unauar3mj0",
+  "checksum": "1:82002a1a14460162669219ceb7ccea1a7ba2aa001d6a6c01b2726a5a2cd7ed93",
+  "operations": [
+    {
+      "renameColumn": {
+        "newName": "lastFallingPrice",
+        "oldName": "lastPrice",
+        "table": "AccountAsset"
+      }
+    }
+  ]
+}

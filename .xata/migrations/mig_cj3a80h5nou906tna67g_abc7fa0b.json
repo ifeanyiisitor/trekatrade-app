@@ -1,0 +1,17 @@
+{
+  "id": "mig_cj3a80h5nou906tna67g",
+  "parentID": "mig_cj39hq5i4tuin0k3ev2g",
+  "checksum": "1:abc7fa0bf02e46e97c7a209ec96bdda9fe612b741444cdba13922be1bba9f5b4",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "doDoubleDownOneLevel",
+          "type": "bool",
+          "defaultValue": "false"
+        },
+        "table": "AccountAsset"
+      }
+    }
+  ]
+}

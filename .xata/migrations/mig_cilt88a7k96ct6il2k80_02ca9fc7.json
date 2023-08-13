@@ -1,0 +1,14 @@
+{
+  "id": "mig_cilt88a7k96ct6il2k80",
+  "parentID": "mig_cilsu427k96ct6il2io0",
+  "checksum": "1:02ca9fc728de1c08fbcfb66d7b1546c4f53852217275e9fbbc8a585d6aedca25",
+  "operations": [
+    {
+      "renameColumn": {
+        "newName": "percentageCashToAllowBuying",
+        "oldName": "percentageAvailableCashToAllowBuying",
+        "table": "Account"
+      }
+    }
+  ]
+}

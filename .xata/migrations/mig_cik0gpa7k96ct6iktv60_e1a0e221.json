@@ -1,0 +1,17 @@
+{
+  "id": "mig_cik0gpa7k96ct6iktv60",
+  "parentID": "mig_ciji7tnemt0dbqndd2t0",
+  "checksum": "1:e1a0e221827031aba271f20c32bb3f0804f0dfa57448405139339724d19d8051",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "priceTrackingIntervalResetInterval",
+          "type": "string",
+          "defaultValue": "3 hours"
+        },
+        "table": "Account"
+      }
+    }
+  ]
+}

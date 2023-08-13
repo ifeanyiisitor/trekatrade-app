@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Ifeanyi-Isitor-s-workspace-qco40i.eu-west-1.xata.sh/db/trekatrade-bot",
+  "codegen": {
+    "output": "app/xata.ts"
+  }
+}

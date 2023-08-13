@@ -1,0 +1,17 @@
+{
+  "id": "mig_cijb8vbdf6unauar3mj0",
+  "parentID": "mig_ciimb6bdf6unauar0d30",
+  "checksum": "1:846c2b4cf5efee4aee81874d5cddb41d9a46b61992c20b30a32c61d6be8a88ce",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "shouldAllowTrading",
+          "type": "bool",
+          "defaultValue": "false"
+        },
+        "table": "Account"
+      }
+    }
+  ]
+}

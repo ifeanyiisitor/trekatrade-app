@@ -1,0 +1,12 @@
+{
+  "id": "mig_ci669d8jgcenc2v0l7o0",
+  "parentID": "mig_ci63315ro0rfgu98f3n0",
+  "checksum": "1:d42b0e0c014f1f2d405da3d69091e270cbdbd57cc4ef02685e286751bbd461a9",
+  "operations": [
+    {
+      "removeTable": {
+        "table": "Instruction"
+      }
+    }
+  ]
+}

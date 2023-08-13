@@ -1,0 +1,13 @@
+{
+  "id": "mig_cj3ult38ktn4muotfbsg",
+  "parentID": "mig_cj3ulq8h4hgr0mu0bu9g",
+  "checksum": "1:3e6088abf62db7365599e7a0e06d93d070adac636659d4ed47070ee03ef7e087",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "totalInvested",
+        "table": "Account"
+      }
+    }
+  ]
+}

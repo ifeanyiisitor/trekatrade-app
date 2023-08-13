@@ -1,0 +1,16 @@
+{
+  "id": "mig_ci66ofdro0rfgu98fdsg",
+  "parentID": "mig_ci66o5tro0rfgu98fdng",
+  "checksum": "1:bc7860f76c946ea6be7b433add4dba68c87b5c56ff623bfc41ecb5fc2301615a",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "asetSymbolsJson",
+          "type": "string"
+        },
+        "table": "Random"
+      }
+    }
+  ]
+}

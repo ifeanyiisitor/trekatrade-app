@@ -1,0 +1,17 @@
+{
+  "id": "mig_cijg6sgol7ciea5l7iu0",
+  "parentID": "mig_cijg6m0ol7ciea5l7it0",
+  "checksum": "1:bf9c4152285f5890342b3add42b579dc0861fab9d19f5d677e224ca5dd5cd8c6",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "priceTrackingInterval",
+          "type": "string",
+          "defaultValue": "1 hour"
+        },
+        "table": "AssetDefaults"
+      }
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 import { SignUp } from '@clerk/nextjs'
-import { AuthPage } from '../components/AuthPage'
-import { AuthForm } from '../components/AuthForm'
+import { AuthPage } from '../components/auth-page'
+import { AuthForm } from '../components/auth-form'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {

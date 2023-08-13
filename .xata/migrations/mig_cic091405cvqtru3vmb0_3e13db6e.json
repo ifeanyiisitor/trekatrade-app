@@ -1,0 +1,20 @@
+{
+  "id": "mig_cic091405cvqtru3vmb0",
+  "parentID": "mig_cic07nc05cvqtru3vm90",
+  "checksum": "1:3e13db6ed1515f153fc40639b7d8acc204e70ec2c907cd38117c7c95220a7b1f",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "feature",
+          "type": "link",
+          "link": {
+            "table": "Feature"
+          },
+          "unique": true
+        },
+        "table": "AccountFeature"
+      }
+    }
+  ]
+}

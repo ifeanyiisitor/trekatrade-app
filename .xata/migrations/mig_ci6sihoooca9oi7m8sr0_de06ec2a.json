@@ -1,0 +1,12 @@
+{
+  "id": "mig_ci6sihoooca9oi7m8sr0",
+  "parentID": "mig_ci6si0oooca9oi7m8sq0",
+  "checksum": "1:de06ec2a7b08791233d4ec68a560d86a8626bb6e9f654bf6d8af36ed8cee00b6",
+  "operations": [
+    {
+      "removeTable": {
+        "table": "SellGreenAssetsInstruction"
+      }
+    }
+  ]
+}

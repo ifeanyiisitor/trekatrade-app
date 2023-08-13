@@ -1,0 +1,17 @@
+{
+  "id": "mig_cilst10j4ri6nsr4679g",
+  "parentID": "mig_cilspij10nsb116jnv20",
+  "checksum": "1:e8417264177e70bf811fc23717d504b5a14d187bfaa252bb46f38b0cd913bae6",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "shouldPauseBuying",
+          "type": "bool",
+          "defaultValue": "false"
+        },
+        "table": "Account"
+      }
+    }
+  ]
+}

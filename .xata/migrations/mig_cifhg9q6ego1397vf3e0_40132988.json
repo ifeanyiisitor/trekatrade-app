@@ -1,0 +1,17 @@
+{
+  "id": "mig_cifhg9q6ego1397vf3e0",
+  "parentID": "mig_cifc2ja6ego1397vejng",
+  "checksum": "1:401329883069306f0df83005e82469bc26a15d86f53f30bcaf6e572f87f68b66",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "fibonacciDoubeDownCount",
+          "type": "int",
+          "defaultValue": "0"
+        },
+        "table": "AccountAsset"
+      }
+    }
+  ]
+}

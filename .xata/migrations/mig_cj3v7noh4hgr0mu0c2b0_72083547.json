@@ -1,0 +1,17 @@
+{
+  "id": "mig_cj3v7noh4hgr0mu0c2b0",
+  "parentID": "mig_cj3v7k8h4hgr0mu0c2a0",
+  "checksum": "1:72083547542b0f9337b644f01bc3ddf194b779ce4894de209794dc88d1a469e8",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "cash",
+          "type": "float",
+          "defaultValue": "0"
+        },
+        "table": "Tally"
+      }
+    }
+  ]
+}

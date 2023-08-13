@@ -1,0 +1,16 @@
+{
+  "id": "mig_ci5maldro0rfgu98dlc0",
+  "parentID": "mig_ci5ma78jgcenc2v0jupg",
+  "checksum": "1:3c127e86e9a452ef977db96cdefcca78374978593f13877ce7d6fef485ece9ef",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "side",
+          "type": "string"
+        },
+        "table": "AssetOrder"
+      }
+    }
+  ]
+}

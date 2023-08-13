@@ -1,0 +1,13 @@
+{
+  "id": "mig_civ5snasht810mqago8g",
+  "parentID": "mig_civ5eb6on47akp469hf0",
+  "checksum": "1:b117bb855b994c34082f3164430e26f6fc3a7276e11875b85aa859234ba2cd37",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "doubleDownIntervalRules",
+        "table": "AssetDefaults"
+      }
+    }
+  ]
+}

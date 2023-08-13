@@ -1,0 +1,17 @@
+{
+  "id": "mig_ci62vt5ro0rfgu98f2r0",
+  "parentID": "mig_ci62vmlro0rfgu98f2lg",
+  "checksum": "1:7608c45c1e9dcad7750da3f50c2dba8b02df9c9189681318e4315e8e133a13cd",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "type",
+          "type": "string",
+          "unique": true
+        },
+        "table": "Instruction"
+      }
+    }
+  ]
+}

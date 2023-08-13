@@ -1,0 +1,12 @@
+{
+  "id": "mig_ci630u5ro0rfgu98f3k0",
+  "parentID": "mig_ci62vt5ro0rfgu98f2r0",
+  "checksum": "1:0198de5d4de34c41d9a120ff245bbcbf32ac17abc72de50564d7de94608e05b8",
+  "operations": [
+    {
+      "addTable": {
+        "table": "SellGreenAssetsInstruction"
+      }
+    }
+  ]
+}
