@@ -1,8 +1,8 @@
 import { z } from 'zod'
 
-export type AccountData = z.infer<typeof AccountDataSchema>
+export type AccountCreationData = z.infer<typeof AccountCreationDataSchema>
 
-export const AccountDataSchema = z.object({
+export const AccountCreationDataSchema = z.object({
   name: z
     .string({ required_error: 'Please enter an name' })
     .nonempty({ message: 'Please enter an name' }),

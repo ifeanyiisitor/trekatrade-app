@@ -10,7 +10,7 @@ export const env = createEnv({
     XATA_API_KEY: z.string(),
     XATA_BRANCH: z.string(),
     // CLERK_WEBHOOK_SECRET: z.string(),
-    // ENCRYPTION_KEY: z.string(),
+    ENCRYPTION_KEY: z.string(),
   },
   /*
    * Environment variables available on the client (and server).
@@ -31,6 +31,6 @@ export const env = createEnv({
     XATA_API_KEY: process.env.XATA_API_KEY,
     XATA_BRANCH: process.env.XATA_BRANCH,
     // CLERK_WEBHOOK_SECRET: process.env.CLERK_WEBHOOK_SECRET,
-    // ENCRYPTION_KEY: process.env.ENCRYPTION_KEY,
+    ENCRYPTION_KEY: process.env.ENCRYPTION_KEY,
   },
 })

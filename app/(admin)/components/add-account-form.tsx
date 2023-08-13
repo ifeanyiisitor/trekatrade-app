@@ -27,7 +27,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { addCurrentUserAccount } from '../actions/add-current-user-account'
 import { ReloadIcon, ExclamationTriangleIcon } from '@radix-ui/react-icons'
 import { Alert, AlertDescription, AlertTitle } from '@/app/components/ui/alert'
-import { AccountData, AccountDataSchema } from '../schemas'
+import { AccountCreationData, AccountCreationDataSchema } from '../schemas'
 
 type Props = {
   children?: React.ReactNode
@@ -38,8 +38,8 @@ export function AddAccountFormTrigger({ children }: Props) {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [errorMessage, setErrorMessage] = useState<string | null>(null)
 
-  const form = useForm<AccountData>({
-    resolver: zodResolver(AccountDataSchema),
+  const form = useForm<AccountCreationData>({
+    resolver: zodResolver(AccountCreationDataSchema),
     defaultValues: {
       name: '',
       alpacaApiKey: '',
@@ -47,7 +47,7 @@ export function AddAccountFormTrigger({ children }: Props) {
     },
   })
 
-  async function onSubmit(values: AccountData) {
+  async function onSubmit(values: AccountCreationData) {
     setIsSubmitting(true)
     try {
       if (errorMessage) setErrorMessage(null)
