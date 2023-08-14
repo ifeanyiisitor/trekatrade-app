@@ -5,11 +5,16 @@ import 'server-only'
 import { env } from '@/app/env'
 import { auth } from '@clerk/nextjs'
 import { encrypt } from '@/lib/encryption'
-import { accountService } from '../container'
-import { AccountCreationData, AccountCreationDataSchema } from '../schemas'
+import { ZodError } from 'zod'
+import { ActionError } from '@/lib/next-actions/action-error'
 import { revalidateTag } from 'next/cache'
+import { accountService } from '../container'
+import { ActionResponse } from '@/lib/next-actions/types'
+import { AccountCreationData, AccountCreationDataSchema } from '../schemas'
 
-export async function addCurrentUserAccount(accountData: AccountCreationData) {
+export async function addCurrentUserAccount(
+  accountData: AccountCreationData
+): Promise<ActionResponse> {
   try {
     const { userId } = auth()
 
@@ -32,15 +37,15 @@ export async function addCurrentUserAccount(accountData: AccountCreationData) {
 
     return { status: 'success' }
   } catch (error) {
-    if (error instanceof ServerActionError) {
+    if (error instanceof ActionError) {
       return error.serialize()
     } else if (error instanceof Error) {
-      return new ServerActionError({
-        message: error.message,
+      return new ActionError({
+        message: 'Something went wrong: ' + error.message,
         type: 'unknown',
       }).serialize()
     } else {
-      return new ServerActionError({
+      return new ActionError({
         message: 'An unknown error occurred',
         type: 'unknown',
         data: error,
@@ -51,7 +56,7 @@ export async function addCurrentUserAccount(accountData: AccountCreationData) {
 
 function ensureUserIsAuthenticated(userId: string | null): asserts userId {
   if (!userId)
-    throw new ServerActionError({
+    throw new ActionError({
       message: 'User is not authenticated',
       type: 'authentication',
     })
@@ -61,11 +66,13 @@ function ensureAccountDataIsValid(accountData: AccountCreationData) {
   try {
     AccountCreationDataSchema.parse(accountData)
   } catch (error) {
-    throw new ServerActionError({
-      message: 'The account data is invalid',
-      type: 'validation',
-      data: error,
-    })
+    if (error instanceof ZodError) {
+      throw new ActionError({
+        message: 'The account data is invalid',
+        type: 'validation',
+        issues: error.errors,
+      })
+    }
   }
 }
 
@@ -79,46 +86,17 @@ async function ensureAccountDoesntAlreadyExist(
   })
 
   if (existingAccount) {
-    throw new ServerActionError({
+    throw new ActionError({
+      type: 'validation',
       message:
-        'An account by that name already exists. Please change the account name and try again',
-      type: 'duplication',
+        'There is a problem with the account name that you have supplied',
+      issues: [
+        {
+          path: ['name'],
+          message: 'An account with this name already exists',
+          code: 'custom',
+        },
+      ],
     })
-  }
-}
-
-type ServerErrorProps = {
-  message: string
-  type?: 'authentication' | 'duplication' | 'validation' | 'unknown'
-  data?: unknown
-}
-
-class ServerActionError extends Error {
-  type: ServerErrorProps['type']
-  data?: unknown
-
-  constructor(props: ServerErrorProps) {
-    super(props.message)
-    this.type = props.type || 'unknown'
-    this.data = props.data
-
-    // Restore the prototype chain
-    Object.setPrototypeOf(this, new.target.prototype)
-
-    // Set the name to the current class name
-    this.name = this.constructor.name
-
-    // Capture the stack trace
-    Error.captureStackTrace(this, this.constructor)
-  }
-
-  // Returns a serializable version of the error
-  serialize(): Record<string, any> {
-    return {
-      status: 'error',
-      message: this.message,
-      type: this.type,
-      data: this.data,
-    }
   }
 }

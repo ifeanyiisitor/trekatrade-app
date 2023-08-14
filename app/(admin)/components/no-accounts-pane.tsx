@@ -1,5 +1,7 @@
-import { Button } from '@/app/components/ui/button'
-// import { AddAccountFormTrigger } from './AddAccountFormTrigger'
+import {
+  AddAccountFormTrigger,
+  AddAccountFormTriggerButton,
+} from './add-account-form'
 
 export function NoAccountsPane() {
   return (
@@ -10,10 +12,9 @@ export function NoAccountsPane() {
         Trekatrade bot
       </p>
       <div className="mt-4">
-        {/* <AddAccountFormTrigger>
-          <AddAccountFormTrigger.Button />
-        </AddAccountFormTrigger> */}
-        <Button>Add Account</Button>
+        <AddAccountFormTrigger>
+          <AddAccountFormTriggerButton />
+        </AddAccountFormTrigger>
       </div>
     </div>
   )
