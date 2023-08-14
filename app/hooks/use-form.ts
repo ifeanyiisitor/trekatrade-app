@@ -1,5 +1,5 @@
 import * as rhf from 'react-hook-form'
-import { useState } from 'react'
+import { MutableRefObject, useState } from 'react'
 import { ZodSchema } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { ActionResponse } from '@/lib/next-actions/types'
@@ -11,13 +11,18 @@ import {
   isActionValidationError,
 } from '@/lib/next-actions/guards'
 
-type UseFormProps<V extends rhf.FieldValues> = rhf.UseFormProps<V> & {
+export type UseFormResult<V extends rhf.FieldValues = Record<string, any>> =
+  ReturnType<typeof useForm<V>>
+
+export type UseFormProps<V extends rhf.FieldValues> = rhf.UseFormProps<V> & {
+  ref?: MutableRefObject<UseFormResult<V> | undefined>
   schema: ZodSchema<unknown>
   action: (data: V) => Promise<ActionResponse>
   onSuccess?: () => void
 }
 
-export function UseForm<V extends rhf.FieldValues>({
+export function useForm<V extends rhf.FieldValues>({
+  ref,
   schema,
   action,
   onSuccess,
@@ -52,7 +57,7 @@ export function UseForm<V extends rhf.FieldValues>({
     setErrorMessage(null)
   }
 
-  return {
+  const api = {
     ...rhfForm,
     props: rhfForm,
     control: rhfForm.control,
@@ -61,4 +66,7 @@ export function UseForm<V extends rhf.FieldValues>({
     errorMessage,
     reset,
   }
+
+  if (ref) ref.current = api
+  return api
 }
