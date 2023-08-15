@@ -12,7 +12,7 @@ export const AccountCreationDataSchema = z.object({
   alpacaApiSecret: z
     .string({ required_error: 'Please enter your alpaca api secret' })
     .nonempty({ message: 'Please enter your alpaca api secret' }),
-  isPaper: z.boolean().optional().default(false),
+  isPaper: z.boolean(),
 })
 
 export const AccountDtoSchema = z.object({

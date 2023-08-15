@@ -19,7 +19,7 @@ import { Alert, AlertDescription, AlertTitle } from '@/app/components/ui/alert'
 import { FieldPath, FieldValues } from 'react-hook-form'
 import { ReactNode } from 'react'
 
-type SmartFormProps = {
+export type SmartFormProps = {
   form: ReturnType<typeof useForm<any>>
   children?: ReactNode
   className?: string
@@ -54,14 +54,13 @@ export function SmartFormInputs({ children }: SmartFormInputsProps) {
   return <div className="space-y-6">{children}</div>
 }
 
-type SmartFormErrorAlertProps<V extends FieldValues> = {
+export type SmartFormErrorAlertProps<V extends FieldValues> = {
   form: ReturnType<typeof useForm<V>>
 }
 
 export function SmartFormErrorAlert<V extends FieldValues>({ form }: SmartFormErrorAlertProps<V>) {
   return (
     <>
-      {' '}
       {form.errorMessage && (
         <Alert variant="destructive">
           <ExclamationTriangleIcon className="h-4 w-4" />
@@ -73,7 +72,7 @@ export function SmartFormErrorAlert<V extends FieldValues>({ form }: SmartFormEr
   )
 }
 
-type SmartFormTextFieldProps<V extends FieldValues> = {
+export type SmartFormTextFieldProps<V extends FieldValues> = {
   form: ReturnType<typeof useForm<V>>
   name: FieldPath<V>
   label: string
@@ -101,7 +100,7 @@ export function SmartFormTextField<V extends FieldValues>({
   )
 }
 
-type SmartFormSwitchFieldProps<V extends FieldValues> = {
+export type SmartFormSwitchFieldProps<V extends FieldValues> = {
   form: ReturnType<typeof useForm<V>>
   name: FieldPath<V>
   label: string
@@ -135,7 +134,7 @@ export function SmartFormSwitchField<V extends FieldValues>({
   )
 }
 
-type SmartFormSubmitButtonProps<V extends FieldValues> = {
+export type SmartFormSubmitButtonProps<V extends FieldValues> = {
   form: ReturnType<typeof useForm<V>>
   label: string
 }

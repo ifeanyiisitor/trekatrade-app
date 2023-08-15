@@ -1,22 +1,19 @@
 import * as rhf from 'react-hook-form'
 import { MutableRefObject, useState } from 'react'
-import { ZodSchema } from 'zod'
+import { ZodSchema, z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { ActionResponse } from '@/lib/next-actions/types'
 import { setFormServerValidationIssues } from '@/lib/next-actions/client-utils'
 
-import {
-  isActionError,
-  isActionSuccess,
-  isActionValidationError,
-} from '@/lib/next-actions/guards'
+import { isActionError, isActionSuccess, isActionValidationError } from '@/lib/next-actions/guards'
 
-export type UseFormResult<V extends rhf.FieldValues = Record<string, any>> =
-  ReturnType<typeof useForm<V>>
+export type UseFormResult<V extends rhf.FieldValues = Record<string, any>> = ReturnType<
+  typeof useForm<V>
+>
 
 export type UseFormProps<V extends rhf.FieldValues> = rhf.UseFormProps<V> & {
   ref?: MutableRefObject<UseFormResult<V> | undefined>
-  schema: ZodSchema<unknown>
+  schema: ZodSchema<V>
   action: (data: V) => Promise<ActionResponse>
   onSuccess?: () => void
 }

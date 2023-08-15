@@ -17,32 +17,36 @@ type DrawerHookProps = {
 }
 
 /**
- * `useDrawer` provides a stateful api as well as a set of drawers components pre-configured
- * to work together around the same shared state. It's an exploration of the non-standard
- * (but at times useful) pattern of returning components from hooks in order to yield a more
- * expressive and less verbose component usage
+ * `useDrawer` provides a stateful API as well as a set of Drawer components pre-configured
+ * to work together around the same shared state. It's an exploration of a non-standard
+ * pattern in React: returning components from hooks. This can lead to cleaner component trees
+ * and more intuitive component interactions by abstracting away much of the boilerplate,
+ * yielding a more expressive and less verbose component usage.
  *
  * Example Usage:
  *
  * ```typescript
- * const { Drawer, closeDrawer } = useDrawer();
+ * function AddContactDrawer() {
+ *   const { Drawer, closeDrawer } = useDrawer();
  *
- * return (
- *   <Drawer>
- *     <Drawer.Trigger>
- *       <Button>Add Contact</Button>
- *     </Drawer.Trigger>
- *     <Drawer.Content forForm>
- *       <Drawer.Heading>
- *         <Drawer.Title>Add Contact</Drawer.Title>
- *         <Drawer.Description>Add the details of a new contact</Drawer.Description>
- *       </Drawer.Heading>
- *       <ContactForm onSuccess={closeDrawer} />
- *     </Drawer.Content>
- *   </Drawer>
- * )
+ *   return (
+ *     <Drawer>
+ *       <Drawer.Trigger>
+ *         <Button>Add Contact</Button>
+ *       </Drawer.Trigger>
+ *       <Drawer.Content forForm>
+ *         <Drawer.Header>
+ *           <Drawer.Title>Add Contact</Drawer.Title>
+ *           <Drawer.Description>Add the details of a new contact</Drawer.Description>
+ *         </Drawer.Header>
+ *         <ContactForm onSuccess={closeDrawer} />
+ *       </Drawer.Content>
+ *     </Drawer>
+ *   )
+ * }
  * ```
  */
+
 export function useDrawer({ onOpen, onClose }: DrawerHookProps = {}) {
   const [isOpen, setIsOpen] = useState(false)
   const openDrawer = useCallback(() => setIsOpen(true), [])
@@ -58,8 +62,8 @@ export function useDrawer({ onOpen, onClose }: DrawerHookProps = {}) {
 
   const DrawerTrigger = useMemo(() => {
     function DrawerTrigger({ children }: Props) {
-      // Accessing the hook's context like this allows us to bypass the traditional React reactivity
-      // and provides a way to use the most current state & logic without re-creating the component.
+      // Accessing the hook's context via the `.api` property is a non-standard pattern used to bypass
+      // traditional React reactivity, allowing the use of the most current state & logic without re-creating the component.
       const { setIsOpen } = DrawerTrigger.api
       return (
         <SheetTrigger asChild>
@@ -71,7 +75,7 @@ export function useDrawer({ onOpen, onClose }: DrawerHookProps = {}) {
     DrawerTrigger.api = api
     return DrawerTrigger
     // We are intentionally not specifying dependencies here because `api` is a stable object
-    // that doesn't need to be watched for changes. This way, we avoid unnecessary re-renders.
+    // that doesn't need to be watched for changes, avoiding unnecessary re-renders.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
@@ -85,8 +89,8 @@ export function useDrawer({ onOpen, onClose }: DrawerHookProps = {}) {
       )
     }
 
-    // This is done to allow the `Drawer` component access to the current state & logic.
-    // This pattern lets us bypass React's traditional reactivity mechanisms.
+    // The `.api` property on the components is used to bypass traditional React reactivity,
+    // providing a way to use the most current state & logic without re-creating the component.
     Drawer.api = api
     Drawer.Trigger = DrawerTrigger
     Drawer.Content = DrawerContentImpl
@@ -100,10 +104,9 @@ export function useDrawer({ onOpen, onClose }: DrawerHookProps = {}) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  // The redundancy here is needed as it allows for the components to have the
-  // latest version of the api (seeing that it could change between renders). The reason why
-  // we are also setting these within the `useMemo` blocks is to prevent typescript from complaining
-  // that the props being set doesn't exist
+  // The redundancy here ensures that the components have the latest version of the API,
+  // even if it changes between renders. Assigning within the `useMemo` blocks also
+  // prevents TypeScript from complaining about non-existent properties.
   Drawer.api = api
   Drawer.Trigger = DrawerTrigger
   DrawerTrigger.api = api
@@ -115,8 +118,9 @@ type DrawerContentProps = Props & {
   forForm?: boolean
 }
 
-// We aren't creating this component within the hook because it's a straightforward, stateless
-// rendering component. By keeping it outside, we avoid unnecessary recreations during re-renders.
+// This component is defined outside of the hook because it's a straightforward, stateless
+// rendering component. By keeping it outside, we avoid unnecessary recreations during re-renders,
+// which can be beneficial for performance and avoiding unnecessary updates.
 function DrawerContentImpl({ children, className, forForm }: DrawerContentProps) {
   return (
     <SheetContent className={cn({ 'flex flex-col gap-8': forForm }, className)}>
