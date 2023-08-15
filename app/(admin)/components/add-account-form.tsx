@@ -1,63 +1,18 @@
 'use client'
 
-import {
-  Sheet,
-  SheetTitle,
-  SheetHeader,
-  SheetContent,
-  SheetTrigger,
-  SheetDescription,
-} from '@/app/components/ui/sheet'
-
+import Form from '@/app/components/smart-form'
 import { Button } from '@/app/components/ui/button'
-import { SmartForm } from '@/app/components/smart-form'
-import { useSafeRef } from '@/app/hooks/use-safe-ref'
 import { addCurrentUserAccount } from '../actions/add-current-user-account'
 import { UseFormResult, useForm } from '@/app/hooks/use-form'
 import { AccountCreationDataSchema } from '../schemas'
-import { MutableRefObject, useState } from 'react'
+import { MutableRefObject } from 'react'
 
-type FormTriggerProps = {
-  children?: React.ReactNode
-}
-
-export function AddAccountFormTrigger({ children }: FormTriggerProps) {
-  const formRef = useSafeRef<UseFormResult>()
-  const [sheetOpen, setSheetOpen] = useState(false)
-
-  function onFormSuccess() {
-    setSheetOpen(false)
-  }
-
-  function handleSheetOpenChange(open: boolean) {
-    setSheetOpen(open)
-    if (!open) formRef.current.reset()
-  }
-
-  return (
-    <Sheet open={sheetOpen} onOpenChange={handleSheetOpenChange}>
-      <SheetTrigger asChild>
-        <div onClick={() => setSheetOpen(true)}>{children}</div>
-      </SheetTrigger>
-      <SheetContent className="flex flex-col gap-8">
-        <SheetHeader>
-          <SheetTitle>Add an Alpaca Account</SheetTitle>
-          <SheetDescription>
-            Add the paper or live alpaca account that the bot should trade
-          </SheetDescription>
-        </SheetHeader>
-        <AddAccountForm formRef={formRef} onSuccess={onFormSuccess} />
-      </SheetContent>
-    </Sheet>
-  )
-}
-
-type FormProps = {
+type Props = {
   formRef?: MutableRefObject<UseFormResult<any> | undefined>
   onSuccess?: () => void
 }
 
-function AddAccountForm({ formRef, onSuccess }: FormProps) {
+export function AddAccountForm({ formRef, onSuccess }: Props) {
   const form = useForm({
     ref: formRef,
     action: addCurrentUserAccount,
@@ -72,28 +27,16 @@ function AddAccountForm({ formRef, onSuccess }: FormProps) {
   })
 
   return (
-    <SmartForm form={form} grow justifyBetween>
-      <SmartForm.Inputs>
-        <SmartForm.ErrorAlert form={form} />
-        <SmartForm.TextField form={form} name="name" label="Name" />
-        <SmartForm.TextField
-          form={form}
-          name="alpacaApiKey"
-          label="Alpaca api key"
-        />
-        <SmartForm.TextField
-          form={form}
-          name="alpacaApiSecret"
-          label="Alpaca api secret"
-        />
-        <SmartForm.SwitchField
-          form={form}
-          name="isPaper"
-          label="Paper Trading?"
-        />
-      </SmartForm.Inputs>
-      <SmartForm.SubmitButton form={form} label="Add Account" />
-    </SmartForm>
+    <Form form={form} grow justifyBetween>
+      <Form.Inputs>
+        <Form.ErrorAlert form={form} />
+        <Form.TextField form={form} name="name" label="Name" />
+        <Form.TextField form={form} name="alpacaApiKey" label="Alpaca api key" />
+        <Form.TextField form={form} name="alpacaApiSecret" label="Alpaca api secret" />
+        <Form.SwitchField form={form} name="isPaper" label="Paper Trading?" />
+      </Form.Inputs>
+      <Form.SubmitButton form={form} label="Add Account" />
+    </Form>
   )
 }
 

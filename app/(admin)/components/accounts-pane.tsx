@@ -1,9 +1,6 @@
 import tw from 'tailwind-styled-components'
 import { AccountsTable } from './accounts-table'
-import {
-  AddAccountFormTrigger,
-  AddAccountFormTriggerButton,
-} from './add-account-form'
+import { AddAccountFormTrigger, AddAccountFormTriggerButton } from './add-account-form-trigger'
 
 const Header = tw.header`flex justify-between items-center border-b p-8 pl-10 pr-10`
 const Heading = tw.div`flex flex-col gap-2`

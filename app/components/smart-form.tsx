@@ -27,13 +27,7 @@ type SmartFormProps = {
   grow?: boolean
 }
 
-export function SmartForm({
-  form,
-  children,
-  className,
-  justifyBetween,
-  grow,
-}: SmartFormProps) {
+export function SmartForm({ form, children, className, justifyBetween, grow }: SmartFormProps) {
   return (
     <Form {...form.props}>
       <form
@@ -64,9 +58,7 @@ type SmartFormErrorAlertProps<V extends FieldValues> = {
   form: ReturnType<typeof useForm<V>>
 }
 
-export function SmartFormErrorAlert<V extends FieldValues>({
-  form,
-}: SmartFormErrorAlertProps<V>) {
+export function SmartFormErrorAlert<V extends FieldValues>({ form }: SmartFormErrorAlertProps<V>) {
   return (
     <>
       {' '}
@@ -154,9 +146,7 @@ export function SmartFormSubmitButton<V extends FieldValues>({
 }: SmartFormSubmitButtonProps<V>) {
   return (
     <Button type="submit" disabled={form.isSubmitting}>
-      {form.isSubmitting && (
-        <ReloadIcon className="mr-2 h-4 w-4 animate-spin" />
-      )}
+      {form.isSubmitting && <ReloadIcon className="mr-2 h-4 w-4 animate-spin" />}
       {label}
     </Button>
   )
@@ -167,3 +157,5 @@ SmartForm.TextField = SmartFormTextField
 SmartForm.ErrorAlert = SmartFormErrorAlert
 SmartForm.SwitchField = SmartFormSwitchField
 SmartForm.SubmitButton = SmartFormSubmitButton
+
+export default SmartForm
